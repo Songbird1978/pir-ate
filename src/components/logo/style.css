@@ -1,0 +1,8 @@
+.logo {
+position: fixed;
+margin-left: 20px;
+margin-top: 10px;
+background-color: transparent;
+width: 30vh;
+ z-index: 2;
+}

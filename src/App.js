@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+//import Logo from './components/logo/logo';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+//import Navbar from './components/navbar/navbar';
+import Home from './pages/home/home';
+
 import './App.css';
+import Video from './components/video/video'
+
 
 function App() {
   return (
+    <>   
+    
+       <Video />
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="" alt="logo" />
-        <p>
-          Site Under Construction!
-        </p>
-        <div src="../public/circuitboard.jpg"
-          className="App-link"
-          href="...png"
-          
-          alt="circuitboard"
-        >
-     
-        </div>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="./home" element={<Home />} />
+      </Routes>
+
+
+
     </div>
+
+    </>
+
   );
 }
 

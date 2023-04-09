@@ -1,0 +1,38 @@
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+
+}
+
+p {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  z-index: 7;
+  font-family: 'commodore';
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  left: 15%;
+  top: 80%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  p {
+    font-size: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  p {
+    font-size: 40px;
+  }
+}

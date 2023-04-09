@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'ambitsek';
+  src: local('ambitsek'), url(./fonts/ambitsek.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'commodore';
+  src: local('commodore'), url(./fonts/Commodore\ Pixelized\ v1.2.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'editia';
+  src: local('editia'), url(./fonts/EDITIA__.TTF) format('truetype');
+}
+
+@font-face {
+  font-family: 'irrep';
+  src: local('irrep'), url(./fonts/irrep.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'take cover';
+  src: local('take cover'), url(./fonts/Take\ cover.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'zx-spectrum';
+  src: local('zx-spectrum'), url(./fonts/zx-spectrum.ttf) format('truetype');
+}
