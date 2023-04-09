@@ -11,7 +11,7 @@ function Video() {
         <>
             <Logo />
            
-            <video autoPlay loop muted >
+            <video autoPlay loop muted="true" >
                 <source src={video} type="video/mp4" ></source>
             </video>
             
