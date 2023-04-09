@@ -1,6 +1,6 @@
 ul {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
     justify-content: baseline;
     list-style-type:none;
     margin-top: 100px;
@@ -19,7 +19,7 @@ a {
 
     height: 30px;
     width: 50px;
-    padding: 5px;
+    padding: 10px;
     z-index: 4;
 
 
