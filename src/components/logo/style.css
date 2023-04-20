@@ -1,8 +1,21 @@
 .logo {
-position: fixed;
-margin-left: 20px;
-margin-top: 10px;
-background-color: transparent;
-width: 30vh;
- z-index: 2;
+    background-color: none !important;
+    position: fixed;
+    left: 30px;
+    margin-top: 5px;
+    z-index: 2;
+    color: white;
+    font-family: 'zx-spectrum';
+    font-size: 15px;
+ 
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    background-color: none;
+}
+
+link:hover {
+    color: purple;
 }

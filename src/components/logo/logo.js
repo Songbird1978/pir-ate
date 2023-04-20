@@ -1,13 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
-import logo from '../../assets/piratelogo.png';
+import '../../index.css'
+
 
 function Logo() {
-return (
-    <div className="logo"> 
-      <img src={logo} alt="logo" className="logo" />
+  return (
+    <div className="logo">
+      <Link to="/" className="link">
+        <h1>Pir@te</h1>
+      </Link>
     </div>
-);
+  );
 }
 
 export default Logo;

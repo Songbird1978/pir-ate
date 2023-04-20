@@ -1,26 +1,9 @@
 * {
  
-  background-color: transparent;
+  background-color: black;
 }
 
 .container {
   margin: 0;
-}
-
-
-p {
-  font-family: arial;
-  color: aqua;
-  z-index: -1;
-}
-
-
-
-.construction {
-  position: absolute;
-  display: inline-block;
-  background: none;
-  width: 150vh;
-  z-index: 2;
-
+  background-color: black;
 }

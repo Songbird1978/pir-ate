@@ -1,14 +1,16 @@
 import React from 'react';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Twitter from '../../assets/twitter.svg';
 import Insta from '../../assets/insta.svg';
+import Email from '../../assets/emailIcon.svg';
 import './style.css';
+import Container from '@mui/material/Container';
 
 function Contact() {
 
     return (
 
-        <div className="contact">
+        <Container className="container">
+
 
             <ul>
                 <li>
@@ -25,13 +27,15 @@ function Contact() {
 
                 <li>
                     <a href="mailto:jcanepa5@gmail.com">
-                      
+                        <img className="icon" src={Email} type="button" alt="Email icon" />
                     </a>
                 </li>
 
             </ul>
 
-        </div>
+
+
+        </Container>
     )
 }
 
