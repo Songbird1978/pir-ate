@@ -1,18 +1,26 @@
-.construction {
-    padding: 50px;
-    height: 100vh;
 
-}
 
 p {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
     font-family: "take cover";
     color: white;
-    font-size: 50px;
-    margin-left: 200px;
-    margin-top: 50px;
-    padding: 10px;
+    font-size: 30px;
+   
+    box-shadow: 20 white;
   
 }
 
+.containerConstruction {
 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/menatwork.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
 

@@ -5,6 +5,7 @@ ul {
     list-style: none;
     left: -30px;
     top: 40vh;
+    background-color: transparent;
 }
 
 a {
@@ -21,11 +22,6 @@ a {
     background-color: transparent;
 }
 
-.email {
-    height: 30px;
-    width: 50px;
-    padding: 10px;
-    z-index: 4;
- 
+.containercontact {
+    background-color: transparent;
 }
-

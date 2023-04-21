@@ -1,7 +1,7 @@
 import React from 'react';
 import Twitter from '../../assets/twitter.svg';
 import Insta from '../../assets/insta.svg';
-import Email from '../../assets/emailIcon.svg';
+import Email from '../../assets/whiteemail.svg';
 import './style.css';
 import Container from '@mui/material/Container';
 
@@ -9,7 +9,7 @@ function Contact() {
 
     return (
 
-        <Container className="container">
+        <Container className="containercontact">
 
 
             <ul>
