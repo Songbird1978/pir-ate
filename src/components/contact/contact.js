@@ -14,21 +14,28 @@ function Contact() {
 
             <ul>
                 <li>
-                    <a href="https://www.twitter.com/pirat_lab/">
-                        <img className="icon" src={Twitter} type="button" alt="twitter icon" />
-                    </a>
+                    <div className="iconSurround">
+                        <a href="https://www.twitter.com/pirat_lab/">
+                            <img className="icon" src={Twitter} type="button" alt="twitter icon" />
+                        </a>
+                    </div>
                 </li>
 
                 <li>
+                <div className="iconSurround">
                     <a href="https://www.instagram.com/pirat_lab/">
                         <img className="icon" src={Insta} type="button" alt="Insta icon" />
                     </a>
+                    </div>
                 </li>
+               
 
                 <li>
+                <div className="iconSurround">
                     <a href="mailto:jcanepa5@gmail.com">
                         <img className="icon" src={Email} type="button" alt="Email icon" />
                     </a>
+                    </div>
                 </li>
 
             </ul>

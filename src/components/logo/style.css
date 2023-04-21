@@ -16,6 +16,7 @@
     background-color: none;
 }
 
-link:hover {
+.link:hover {
     color: purple;
+    background-color: teal;
 }
