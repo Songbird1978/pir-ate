@@ -17,6 +17,6 @@
 }
 
 .link:hover {
-    color: purple;
+    color: rgb(160, 36, 36);
     background-color: teal;
 }
