@@ -2,18 +2,23 @@ import React from 'react';
 
 //import circuit from './assets/circuitboard.jpg';
 
-//import Container from '@mui/material/Container';
-//import Grid from '@mui/material/Grid';
+
 import '../home/home.css'
-import Video from '../../components/video/video'
+import Video from '../../components/video/video';
+
+import { motion } from "framer-motion";
 
 
 function Home() {
 
     return (
-        <>
-            <Video className="video" />
-        </>
+        <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: {duration: 0.1} }}>
+            <>
+                <Video className="video" />
+            </>
+            
+        </motion.div >
+
     )
 }
 

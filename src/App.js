@@ -6,25 +6,24 @@ import Under from './pages/under/under';
 import Contact from '../src/components/contact/contact';
 import Logo from '../src/components/logo/logo';
 import './App.css';
-//
+
+import { AnimatePresence } from "framer-motion";
 
 
 function App() {
-  const location = useLocation()
+  const location = useLocation();
   return (
     <>
       <Logo />
       <Contact />
 
       <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/under" element={<Under />} />
-        </Routes>
-
-
-
+        <AnimatePresence>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+            <Route path="/under" element={<Under />} />
+          </Routes>
+        </AnimatePresence>
       </div>
 
     </>
