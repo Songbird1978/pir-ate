@@ -14,7 +14,7 @@ function Video() {
 
         <>
             <Link to="./under">
-                <video muted autoPlay loop playsInline  >
+                <video muted autoPlay loop playsInline controls  >
                     <source src={video} type="video/mp4" ></source>
                 </video>
                
