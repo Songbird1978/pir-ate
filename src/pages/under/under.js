@@ -18,7 +18,7 @@ function Under() {
                 <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
                     <Container className="containerConstruction">
                         <div className="menatworkanimation">
-                            <motion.img src={Menatwork} alt="men at work artwork by Jose" className="menatwork" animate={{rotate: [0, 360, 360, 0]}} transition={{ repeat: "infiity", duration: 10}}></motion.img>
+                            <motion.img src={Menatwork} alt="men at work artwork by Jose" className="menatwork" animate={{rotate: [0, 360]}} transition={{ repeat: "infiity", duration: 10, delay: 0, repeatDelay: 0}}></motion.img>
                         </div>
                     </Container>
                 </motion.div>
