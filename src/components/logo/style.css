@@ -1,23 +1,20 @@
 .logo {
     background-color: none !important;
-    position: fixed;
-    padding: 5px;
-    margin-top: 5px;
     z-index: 2;
     color: white;
     font-family: 'zx-spectrum';
-    font-size: 15px;
+    font-size: 12px;
+    margin-left: 5px;
  
 }
 
-
-.link {
+.logoLink {
     text-decoration: none;
     color: white;
     background-color: none;
 }
 
-.link:hover {
+.logoLink:hover {
     color: rgb(160, 36, 36);
     background-color: black;
 }

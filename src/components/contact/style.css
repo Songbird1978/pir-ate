@@ -1,10 +1,11 @@
 ul {
-    position: fixed;
-    display: block;
+    
+    position: flex;
+    display: inline;
     z-index: 4;
     list-style: none;
     left: -30px;
-    top: 20vh;
+    
     background-color: transparent;
 }
 
@@ -24,18 +25,11 @@ a {
 
 .icon:hover {
 
-   width: 55px;
+    color: rgb(160, 36, 36);
    
 }
 
-.iconSurround:hover {
-   
-    height: 50px;
-    width: 65px;
-    background-color: teal;
-    align-items: center;
-  
-}
+
 
 .containercontact {
     background-color: transparent;

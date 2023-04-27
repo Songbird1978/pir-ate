@@ -20,7 +20,7 @@ p {
     background-size: cover;
     background-position: center;
     background-color: black;
-    opacity: 80%;
+    box-sizing: 0;
 
 }
 

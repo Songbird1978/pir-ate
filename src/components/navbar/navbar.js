@@ -1,4 +1,4 @@
-import Logo from '../logo/logo';
+
 import React from 'react';
 import { useState } from 'react';
 import { styled, useTheme } from '@mui/material/styles';
@@ -8,7 +8,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
-import Typography from '@mui/material/Typography';
+import ListItem from '@mui/material/ListItem';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -16,9 +16,14 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { Link } from 'react-router-dom';
 import './style.css';
+import Contact from '../contact/contact';
+import Logo from '../logo/logo';
+
+
 
 
 const drawerWidth = 230;
+//const navItems = ['Home', 'Mxnifesto', 'Articles', 'Shows', 'Info', 'Network', 'Gift Shop', 'Patreon'];
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
@@ -58,19 +63,14 @@ const AppBar = styled(MuiAppBar, {
 
 const DrawerHeader = styled('div')(({ theme }) => ({
   display: 'flex',
-  alignItems: 'center',
-  padding: theme.spacing(0, 1),
-  // necessary for content to be below app bar
-  ...theme.mixins.toolbar,
+  alignItems: 'top',
   justifyContent: 'flex-end',
 }));
 
 
 
 
-function Navbar(props) {
-
-
+function Navbar() {
 
   const theme = useTheme();
   const [open, setOpen] = useState(false);
@@ -87,7 +87,7 @@ function Navbar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} style={{ backgroundColor: "none", color: "white" }}>
+      <AppBar position="fixed" open={open} style={{ height: '10vh', backgroundColor: "black", color: "white" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -98,9 +98,7 @@ function Navbar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            <Logo></Logo>
-          </Typography>
+            <Logo />
         </Toolbar>
       </AppBar>
       <Drawer
@@ -109,34 +107,56 @@ function Navbar(props) {
           flexShrink: 0,
           '& .MuiDrawer-paper': {
             width: drawerWidth,
+            backgroundColor: 'black',
             boxSizing: 'border-box',
           },
         }}
-        variant="persistent"
+        variant="temporary"
         anchor="left"
         open={open}
       >
         <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+          <IconButton onClick={handleDrawerClose} style={{ Color: 'white' }}>
+            {theme.direction === 'ltr' ? <ChevronLeftIcon className="icon" /> : <ChevronRightIcon className="icon" />}
           </IconButton>
         </DrawerHeader>
-        <Divider />
+        <Logo style={{fontSize: "10px"}} />
         {/* this is where the menus start */}
-        <List>
-          <nav className='nav'>
-            <CustomLink to="/home" style={{ textDecoration: 'none', color: 'white' }}>Home</CustomLink>
-            <CustomLink to="/contact" style={{ textDecoration: 'none', color: 'white' }}>Contact</CustomLink>
-          </nav>
-
+        <List className='nav' style={{ backgroundColor: 'black' }}>
+            <ListItem>
+              <Link to="/home" style={{ textDecoration: 'none', color: 'white' }}>Mxnifesto</Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/under" style={{ textDecoration: 'none', color: 'white' }}>Articles</Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/homeTwo" style={{ textDecoration: 'none', color: 'white' }}>Shows</Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/homeTwo" style={{ textDecoration: 'none', color: 'white' }}>Info</Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/homeTwo" style={{ textDecoration: 'none', color: 'white' }}>Network</Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/homeTwo" style={{ textDecoration: 'none', color: 'white' }}>Patreon</Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/homeTwo" style={{ textDecoration: 'none', color: 'white' }}>GiftShop</Link>
+            </ListItem>
+            <Divider />
+          <Contact />
         </List>
         {/* above is where the menus end */}
-
-
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-
       </Main>
     </Box>
   );
@@ -144,16 +164,4 @@ function Navbar(props) {
 
 export default Navbar;
 
-function CustomLink({ to, children, ...props }) {
-  const path = window.location.pathname
 
-  return (
-    <div>
-      <li className={path === to ? "active" : ""}>
-        <Link to={to} {...props}>
-          {children}
-        </Link>
-      </li>
-    </div>
-  )
-}

@@ -7,7 +7,7 @@ import '../../index.css'
 function Logo() {
   return (
     <div className="logo">
-      <Link to="/" className="link">
+      <Link to="/" className="logoLink">
         <h1>P!r@te</h1>
       </Link>
     </div>
