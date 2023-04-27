@@ -1,14 +1,4 @@
-p {
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-    font-family: "take cover";
-    color: white;
-    font-size: 30px;
 
-    box-shadow: 20 white;
-
-}
 
 .containerConstruction {
 
@@ -18,9 +8,8 @@ p {
     /*background-image: url("../../assets/circuitboard.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     background-color: black;
-    box-sizing: 0;
+    margin: 0;
 
 }
 
@@ -29,12 +18,10 @@ p {
     display: flex;
     justify-content: center;
 
-
 }
 
 .menatwork {
 
-   
     align-items: center;
     max-width: 420px;
     padding: 80px;

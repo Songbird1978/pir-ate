@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 //import { AnimatePresence } from "framer-motion";
 //import circuit from './assets/circuitboard.jpg';
 //import Container from '@mui/material/Container';vaa
-import '../homeTwo/homeTwo.css'
+import './homeTwo.css';
 //import Video from '../../components/video/video';
 import Grid from '@mui/material/Grid';
 import { motion } from "framer-motion";
-import '../../index.css'
+import '../../index.css' 
 //import Welcome from '../../assets/welcome.png';
 //import ratty from '../../assets/logo.png';
 
