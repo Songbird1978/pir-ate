@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useState } from 'react';
 import { styled, useTheme } from '@mui/material/styles';
@@ -18,9 +17,6 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import Contact from '../contact/contact';
 import Logo from '../logo/logo';
-
-
-
 
 const drawerWidth = 230;
 //const navItems = ['Home', 'Mxnifesto', 'Articles', 'Shows', 'Info', 'Network', 'Gift Shop', 'Patreon'];
@@ -66,9 +62,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   alignItems: 'top',
   justifyContent: 'flex-end',
 }));
-
-
-
 
 function Navbar() {
 

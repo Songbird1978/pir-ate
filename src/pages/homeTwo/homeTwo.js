@@ -23,18 +23,16 @@ function HomeTwo() {
 
                 <Grid container className="homeTwoGrid">
 
-                    {/* first row of outer grid  */}
+               
                     <Grid item className="homeTwoGrid" xs={1} style={{ backgroundColor: 'black', height: '10vh' }} ></Grid>
                     <Grid item className="welcome" xs={10} style={{ backgroundColor: 'black', height: '10vh' }} ></Grid>
                     <Grid item className="homeTwoGrid" xs={1} style={{ backgroundColor: 'black', height: '10vh' }}></Grid>
 
-                    {/* second row of outer grid */}
                     <Grid item className="noFun" xs={1} style={{ backgroundColor: 'black', height: '75vh' }}></Grid>
                     <Grid item className="center" xs={10} style={{ backgroundColor: 'black', height: '75vh' }}>
 
-                        {/* inner nested grid */}
                         <Grid container className="nestedGrid" style={{ Width: '100vw' }}>
-                            {/* top left inner grid */}
+
                             <Grid item className="topLeft" xs={6} style={{ height: '25vh' }}>
                                 <Link style={{ textDecoration: 'none' }}>
                                     <button className="linkBtn">
@@ -42,7 +40,7 @@ function HomeTwo() {
                                     </button>
                                 </Link>
                             </Grid>
-                            {/* top right inner grid */}
+
                             <Grid item className="topRight" xs={6} style={{ height: '25vh' }}>
                                 <Link style={{ textDecoration: 'none' }}>
                                     <button className="linkBtn">
@@ -50,7 +48,7 @@ function HomeTwo() {
                                     </button>
                                 </Link>
                             </Grid>
-                            {/* mid left inner grid */}
+
                             <Grid item className="midLeft" xs={3.5} style={{ height: '25vh' }}>
                                 <Link style={{ textDecoration: 'none' }}>
                                     <button className="linkBtn">
@@ -58,9 +56,9 @@ function HomeTwo() {
                                     </button>
                                 </Link>
                             </Grid>
-                            {/* center of grid  */}
+
                             <Grid item className="nestedCenter" xs={5} style={{}}></Grid>
-                            {/* mid right inner grid */}
+
                             <Grid item className="midRight" xs={3.5} style={{ height: '25vh' }}>
                                 <Link style={{ textDecoration: 'none' }}>
                                     <button className="linkBtn">
@@ -68,14 +66,14 @@ function HomeTwo() {
                                     </button>
                                 </Link>
                             </Grid>
-                            {/* bottom left inner grid  */}
+
                             <Grid item className="bottomLeft" xs={6} style={{ height: '25vh' }}>
                                 <Link style={{ textDecoration: 'none' }}>
                                     <button className="linkBtn">
                                         Network  </button>
                                 </Link>
                             </Grid>
-                            {/* bottom right inner grid */}
+
                             <Grid item className="bottomRight" xs={6} style={{ height: '25vh' }}>
                                 <Link style={{ textDecoration: 'none' }}>
                                     <button className="linkBtn">
@@ -89,7 +87,7 @@ function HomeTwo() {
                     </Grid>
                     <Grid item className="scratch" xs={1} style={{ backgroundColor: 'black', height: '75vh' }}></Grid>
 
-                    {/* third row of outer grid  */}
+
                     <Grid item className="seven" xs={1} style={{ backgroundColor: 'black', height: '10vh' }}></Grid>
                     <Grid item className="trigger" xs={10} style={{ backgroundColor: 'black', height: '10vh' }}></Grid>
                     <Grid item className="nine" xs={1} style={{ backgroundColor: 'black', height: '10vh' }}></Grid>
