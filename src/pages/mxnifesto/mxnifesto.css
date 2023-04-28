@@ -1,0 +1,30 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.mxnifesto {
+   
+    display: flex block;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    white-space: pre-line;
+}
+
+p, h1 {
+    font-family: 'commodore';
+    color: black;
+    white-space: pre-line;
+    padding: 5%;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.5rem;
+    
+}
+
+p {
+    font-size: small;
+
+}

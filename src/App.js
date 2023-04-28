@@ -4,6 +4,7 @@ import Navbar from './components/navbar/navbar';
 import Home from './pages/home/home';
 import HomeTwo from './pages/homeTwo/homeTwo';
 import Under from './pages/under/under';
+import Mxnifesto from './pages/mxnifesto/mxnifesto';
 import './App.css';
 import { AnimatePresence } from "framer-motion";
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/under" element={<Under />} />
             <Route path="/homeTwo" element={<HomeTwo />} />
+            <Route path="/mxnifesto" element={<Mxnifesto />} />
           </Routes>
         </AnimatePresence>
       </div>
