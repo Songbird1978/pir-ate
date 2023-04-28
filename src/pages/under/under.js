@@ -12,7 +12,7 @@ function Under() {
 
 
         <>
-            <Link to="./">
+            <Link to="/homeTwo">
                 <motion.div className="containerConstruction" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
 
                     <div className="menatworkanimation">

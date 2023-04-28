@@ -10,8 +10,8 @@ function Mxnifesto() {
     return (
         
             <Paper className="mxnifesto" elevation={10} sx={{ mode: 'dark' }}>
-                <h1>Mxnifesto</h1>
-                <p>{
+                <h1 className="title">Mxnifesto</h1>
+                <p className="manifestoParagraph">{
 
 `
 P!R@T LAB creates for change through satirical socio-political art.

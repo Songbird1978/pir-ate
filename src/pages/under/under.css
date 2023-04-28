@@ -2,12 +2,9 @@
 
 .containerConstruction {
 
-    position: fixed;
+    position: flex;
     width: 100%;
     height: 100%;
-    /*background-image: url("../../assets/circuitboard.jpg");*/
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: black;
     margin: 0;
 
@@ -18,12 +15,13 @@
     display: flex;
     justify-content: center;
 
+
 }
 
 .menatwork {
 
     align-items: center;
-    max-width: 420px;
-    padding: 80px;
-    margin-top: 80px;
+    max-width: 600px;
+    padding: 50px;
+    margin-top: 20px;
 }
