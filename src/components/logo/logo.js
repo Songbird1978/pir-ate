@@ -8,7 +8,7 @@ function Logo() {
   return (
     <div className="logo">
       <Link to="/" className="logoLink">
-        <h1>P!r@te</h1>
+        <h1>P!R@TE LAB</h1>
       </Link>
     </div>
   );

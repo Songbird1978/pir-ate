@@ -18,7 +18,7 @@ import './style.css';
 import Contact from '../contact/contact';
 import Logo from '../logo/logo';
 
-const drawerWidth = 230;
+const drawerWidth = 240;
 //const navItems = ['Home', 'Mxnifesto', 'Articles', 'Shows', 'Info', 'Network', 'Gift Shop', 'Patreon'];
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
@@ -91,7 +91,7 @@ function Navbar() {
           >
             <MenuIcon />
           </IconButton>
-            <Logo />
+          <Logo />
         </Toolbar>
       </AppBar>
       <Drawer
@@ -113,37 +113,37 @@ function Navbar() {
             {theme.direction === 'ltr' ? <ChevronLeftIcon className="icon" /> : <ChevronRightIcon className="icon" />}
           </IconButton>
         </DrawerHeader>
-        <Logo style={{fontSize: "10px"}} />
+        <Logo style={{ fontSize: "10px" }} />
         {/* this is where the menus start */}
         <List className='nav' style={{ backgroundColor: 'black' }}>
-            <ListItem>
-              <Link to="/home" style={{ textDecoration: 'none', color: 'white' }}>Mxnifesto</Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/under" style={{ textDecoration: 'none', color: 'white' }}>Articles</Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/homeTwo" style={{ textDecoration: 'none', color: 'white' }}>Shows</Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/homeTwo" style={{ textDecoration: 'none', color: 'white' }}>Info</Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/homeTwo" style={{ textDecoration: 'none', color: 'white' }}>Network</Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/homeTwo" style={{ textDecoration: 'none', color: 'white' }}>Patreon</Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/homeTwo" style={{ textDecoration: 'none', color: 'white' }}>GiftShop</Link>
-            </ListItem>
-            <Divider />
+          <ListItem>
+            <Link to="/mxnifesto" style={{ textDecoration: 'none', color: 'white' }}>Mxnifesto</Link>
+          </ListItem>
+          <Divider />
+          <ListItem>
+            <Link to="/under" style={{ textDecoration: 'none', color: 'white' }}>Articles</Link>
+          </ListItem>
+          <Divider />
+          <ListItem>
+            <Link to="/under" style={{ textDecoration: 'none', color: 'white' }}>Shows</Link>
+          </ListItem>
+          <Divider />
+          <ListItem>
+            <Link to="/under" style={{ textDecoration: 'none', color: 'white' }}>Info</Link>
+          </ListItem>
+          <Divider />
+          <ListItem>
+            <Link to="/under" style={{ textDecoration: 'none', color: 'white' }}>Network</Link>
+          </ListItem>
+          <Divider />
+          <ListItem>
+            <Link to="https://ko-fi.com/pirat_lab" style={{ textDecoration: 'none', color: 'white' }}>Ko-fi</Link>
+          </ListItem>
+          <Divider />
+          <ListItem>
+            <Link to="/under" style={{ textDecoration: 'none', color: 'white' }}>GiftShop</Link>
+          </ListItem>
+          <Divider />
           <Contact />
         </List>
         {/* above is where the menus end */}

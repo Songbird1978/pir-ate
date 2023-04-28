@@ -16,7 +16,6 @@ function Home() {
             <>
                 <Video className="video" />
             </>
-            
         </motion.div >
 
     )

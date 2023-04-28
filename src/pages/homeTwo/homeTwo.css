@@ -72,8 +72,9 @@
 }
 
 .topLeft {
-    display: flex;
+    display: flexbox;
     justify-content: center;
+    align-items: right;
     border-style: solid;
     border-color: blue;
 }

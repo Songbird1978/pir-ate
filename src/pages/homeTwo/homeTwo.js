@@ -10,7 +10,7 @@ import './homeTwo.css';
 //import Video from '../../components/video/video';
 import Grid from '@mui/material/Grid';
 import { motion } from "framer-motion";
-import '../../index.css' 
+import '../../index.css'
 //import Welcome from '../../assets/welcome.png';
 //import ratty from '../../assets/logo.png';
 
@@ -23,7 +23,7 @@ function HomeTwo() {
 
                 <Grid container className="homeTwoGrid">
 
-               
+
                     <Grid item className="homeTwoGrid" xs={1} style={{ backgroundColor: 'black', height: '10vh' }} ></Grid>
                     <Grid item className="welcome" xs={10} style={{ backgroundColor: 'black', height: '10vh' }} ></Grid>
                     <Grid item className="homeTwoGrid" xs={1} style={{ backgroundColor: 'black', height: '10vh' }}></Grid>
@@ -31,7 +31,7 @@ function HomeTwo() {
                     <Grid item className="noFun" xs={1} style={{ backgroundColor: 'black', height: '75vh' }}></Grid>
                     <Grid item className="center" xs={10} style={{ backgroundColor: 'black', height: '75vh' }}>
 
-                        <Grid container className="nestedGrid" style={{ Width: '100vw' }}>
+                        <Grid container className="nestedGrid" style={{ Width: '100vw', Height: '100vh'}}>
 
                             <Grid item className="topLeft" xs={6} style={{ height: '25vh' }}>
                                 <Link style={{ textDecoration: 'none' }}>
