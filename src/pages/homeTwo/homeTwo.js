@@ -34,7 +34,7 @@ function HomeTwo() {
                         <Grid container className="nestedGrid" style={{ Width: '100vw', Height: '100vh'}}>
 
                             <Grid item className="topLeft" xs={6} style={{ height: '25vh' }}>
-                                <Link style={{ textDecoration: 'none' }}>
+                                <Link to="/mxnifesto" style={{ textDecoration: 'none' }}>
                                     <button className="linkBtn">
                                         Mxnifesto
                                     </button>
@@ -42,7 +42,7 @@ function HomeTwo() {
                             </Grid>
 
                             <Grid item className="topRight" xs={6} style={{ height: '25vh' }}>
-                                <Link style={{ textDecoration: 'none' }}>
+                                <Link  style={{ textDecoration: 'none' }}>
                                     <button className="linkBtn">
                                         Articles
                                     </button>
