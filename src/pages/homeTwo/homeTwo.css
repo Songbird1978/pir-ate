@@ -1,6 +1,6 @@
 .homeTwoGrid {
     display: flex;
-    width: 100vw;
+   
 }
 
 .welcome {
@@ -50,7 +50,7 @@
 }
 
 .linkBtn {
-    display: flex;
+    /* display: flex; */
     text-decoration: none;
     color: white;
     font-family: 'commodore';
@@ -68,11 +68,11 @@
     display: flex;
     /* border-style: solid;
     border-color: red; */
-    width: 100vw;
+  
 }
 
 .topLeft {
-    display: flexbox;
+    display: flex;
     justify-content: center;
     align-items: right;
     /* border-style: solid;

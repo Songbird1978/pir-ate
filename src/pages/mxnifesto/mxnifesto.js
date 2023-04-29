@@ -3,17 +3,20 @@ import React from "react";
 import "./mxnifesto.css";
 import '../../index.css';
 import Paper from '@mui/material/Paper';
+import { motion } from "framer-motion";
 //import Container from '@mui/material/Container';
 
 
 function Mxnifesto() {
     return (
-        
+
+        <motion.div className="containerConstruction" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
+
             <Paper className="mxnifesto" elevation={10} sx={{ mode: 'dark' }}>
                 <h1 className="title">Mxnifesto</h1>
                 <p className="manifestoParagraph">{
 
-`
+                    `
 P!R@T LAB creates for change through satirical socio-political art.
 
 A change in perception through multimedia subversions of various kinds.
@@ -38,7 +41,9 @@ In a world falling apart economically, politically and ecologically, we are face
                 </p>
 
             </Paper>
-     
+        </motion.div>
+
+
     );
 }
 

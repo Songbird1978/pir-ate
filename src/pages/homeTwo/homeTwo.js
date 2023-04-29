@@ -29,9 +29,9 @@ function HomeTwo() {
                     <Grid item className="homeTwoGrid" xs={1} style={{ backgroundColor: 'black', height: '10vh' }}></Grid>
 
                     <Grid item className="noFun" xs={1} style={{ backgroundColor: 'black', height: '75vh' }}></Grid>
-                    <Grid item className="center" xs={10} style={{ backgroundColor: 'black', height: '75vh' }}>
+                    <Grid item className="center" xs={10} style={{ backgroundColor: 'black' }}>
 
-                        <Grid container className="nestedGrid" style={{ Width: '100vw', Height: '100vh'}}>
+                        <Grid container className="nestedGrid" style={{ display: 'flex' }}>
 
                             <Grid item className="topLeft" xs={6} style={{ height: '25vh' }}>
                                 <Link to="/mxnifesto" style={{ textDecoration: 'none' }}>
