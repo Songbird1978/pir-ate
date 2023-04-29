@@ -1,5 +1,5 @@
 .title {
-    display: flex;
+    display: block;
     justify-content: center;
     text-align: center;
     font-size:x-large;
@@ -7,7 +7,7 @@
 
 .mxnifesto {
    
-    display: flex block;
+    display: block;
     justify-content: center;
     margin-left: 60px;
     margin-right: 60px;
