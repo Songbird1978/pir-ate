@@ -1,0 +1,17 @@
+.linkBtn:hover {
+    color: rgb(160, 36, 36);
+    background-color: black;
+}
+
+
+.linkBtn {
+    display: inline-flex;
+    text-decoration: none;
+    color: white;
+    font-family: 'commodore';
+    background-color: turquoise;
+    padding: 4px;
+    width: 120px;
+    justify-content: center;
+}
+

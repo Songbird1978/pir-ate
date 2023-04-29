@@ -9,7 +9,7 @@ function Video() {
 
         <>
             <Link to="/homeTwo">
-                <video autoPlay muted controls loop playsInline  >
+                <video autoPlay playsInline  >
                     <source src={video} type="video/mp4" ></source>
                 </video>
             </Link>
