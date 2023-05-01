@@ -22,8 +22,9 @@
 
 video {
 
-
+  box-sizing: border-box;
   scale: 1;
-  height: 80vh;
+  height:75vh;
+  width: 100vw;
 
 }
