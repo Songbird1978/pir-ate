@@ -75,8 +75,11 @@ function Navbar() {
 
   const handleDrawerClose = () => {
     setOpen(false);
+
   };
 
+
+  
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -125,7 +128,7 @@ function Navbar() {
           </ListItem>
           <Divider />
           <ListItem>
-            <Link to="/under" style={{ textDecoration: 'none', color: 'white' }}>Shows</Link>
+            <Link to="/shows" style={{ textDecoration: 'none', color: 'white' }}>Shows</Link>
           </ListItem>
           <Divider />
           <ListItem>

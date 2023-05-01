@@ -33,7 +33,7 @@ function NestedGrid() {
 
                 <Grid item className="topRight" xs={6} sx={{ height: '25vh' }}>
                     <button className="linkBtn">
-                        <Link to="/under" className="linkBtn" style={{ textDecoration: 'none' }}>
+                        <Link to="/articles" className="linkBtn" style={{ textDecoration: 'none' }}>
                             Articles
                         </Link>
                     </button>
@@ -72,7 +72,6 @@ function NestedGrid() {
                         </Link>
                     </button>
                 </Grid>
-
             </Grid>
 
         </>
