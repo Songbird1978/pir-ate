@@ -33,7 +33,7 @@ function NestedGrid() {
 
                 <Grid item className="topRight" xs={6} sx={{ height: '25vh' }}>
                     <button className="linkBtn">
-                        <Link className="linkBtn" style={{ textDecoration: 'none' }}>
+                        <Link to="/under" className="linkBtn" style={{ textDecoration: 'none' }}>
                             Articles
                         </Link>
                     </button>
@@ -41,7 +41,7 @@ function NestedGrid() {
 
                 <Grid item className="midLeft" xs={3.5} sx={{ height: '25vh' }}>
                     <button className="linkBtn">
-                        <Link className="linkBtn" style={{ textDecoration: 'none' }}>
+                        <Link to="/under" className="linkBtn" style={{ textDecoration: 'none' }}>
                             GiftShop
                         </Link>
                     </button>
@@ -51,7 +51,7 @@ function NestedGrid() {
 
                 <Grid item className="midRight" xs={3.5} sx={{ height: '25vh' }}>
                     <button className="linkBtn">
-                        <Link className="linkBtn" style={{ textDecoration: 'none' }}>
+                        <Link to="/under" className="linkBtn" style={{ textDecoration: 'none' }}>
                             Shows
                         </Link>
                     </button>
@@ -59,7 +59,7 @@ function NestedGrid() {
 
                 <Grid item className="bottomLeft" xs={6} sx={{ height: '25vh' }}>
                     <button className="linkBtn">
-                        <Link className="linkBtn" style={{ textDecoration: 'none' }}>
+                        <Link to="/under" className="linkBtn" style={{ textDecoration: 'none' }}>
                             Network
                         </Link>
                     </button>
@@ -67,7 +67,7 @@ function NestedGrid() {
 
                 <Grid item className="bottomRight" xs={6} sx={{ height: '25vh' }}>
                     <button className="linkBtn">
-                        <Link className="linkBtn" style={{ textDecoration: 'none' }}>
+                        <Link to="/under" className="linkBtn" style={{ textDecoration: 'none' }}>
                             Info
                         </Link>
                     </button>
