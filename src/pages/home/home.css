@@ -34,11 +34,10 @@
     border-style: solid;
 }
 
-
-.nestedGrid {
-    display: flex;
-    z-index: 5;
-    border-style: solid;
-    border-color: red;
+.center {
+  
+   z-index: 1;
 }
+
+
 

@@ -3,7 +3,7 @@ import React from 'react';
 //import Home from './pages/home/home';
 //import Under from './pages/under/under';
 import './home.css';
-import Video from '../../components/video/video';
+//import Video from '../../components/video/video';
 import Grid from '@mui/material/Grid';
 import { motion } from "framer-motion";
 import '../../index.css'
@@ -23,8 +23,10 @@ function Home() {
                     <Grid item className="homeTwoGrid" xs={1} sx={{ backgroundColor: 'black', height: '10vh' }}></Grid>
 
                     <Grid item className="noFun" xs={1} sx={{ backgroundColor: 'black', height: '75vh' }}></Grid>
-                    <Grid item className="center" xs={10} sx={{ backgroundColor: 'black' }}>
-                        <NestedGrid className='nestedGrid'> <Video /></NestedGrid>
+                    <Grid item className="center" xs={10} sx={{}}>
+                        <NestedGrid className='nestedGrid'>
+                           
+                        </NestedGrid>
                     </Grid>
                     <Grid item className="scratch" xs={1} sx={{ backgroundColor: 'black', height: '75vh' }}></Grid>
 

@@ -1,20 +1,24 @@
 import React from "react";
+import Box from '@mui/material/Box';
 import "./style.css";
 import video from '../../assets/video.mp4';
 //import Audio from '../audio';
 import { Link } from "react-router-dom";
+import '../../assets/PiratlogoWebsite.jpg';
 
 function Video() {
     return (
 
-        <>
-            <Link to="/homeTwo">
-                <video autoPlay playsInline  >
-                    <source src={video} type="video/mp4" ></source>
-                </video>
-            </Link>
-            {/* <Audio controls /> */}
-        </>
+        <Box className="A">
+            <Box className="B">
+                <Link to="/">
+                    <video autoPlay playsInline controls muted loop >
+                        <source src={video} type="video/mp4" poster=""></source>
+                    </video>
+                </Link>
+                {/* <Audio controls /> */}
+            </Box>
+        </Box>
     );
 }
 

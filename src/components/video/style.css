@@ -1,6 +1,29 @@
-video {
-position: absolute;
+.A {
+  position: absolute;
   width: 100%;
   height: 100%;
- z-index: -1;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.B {
+  display: flex;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+video {
+
+
+  scale: 1;
+  height: 80vh;
+
 }

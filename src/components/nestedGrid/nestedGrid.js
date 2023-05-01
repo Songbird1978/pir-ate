@@ -23,7 +23,7 @@ function NestedGrid() {
 
             <Grid container className="nestedGrid" sx={{ backgroundImage: 'url={Video}' }}>
 
-                <Grid item className="topLeft" xs={6} sx={{ height: '25vh', justifyContent: 'center' }}>
+                <Grid item className="topLeft" xs={6} style={{ height: '25vh' }}>
                     <button className="linkBtn">
                         <Link to="/mxnifesto" className="linkBtn" style={{ textDecoration: 'none' }}>
                             Mxnifesto

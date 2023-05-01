@@ -1,17 +1,54 @@
-.linkBtn:hover {
+.linkBtn:hover,
+button:hover {
+    display: flex;
     color: rgb(160, 36, 36);
     background-color: black;
-}
-
-
-.linkBtn {
-    display: inline-flex;
-    text-decoration: none;
-    color: white;
     font-family: 'commodore';
-    background-color: turquoise;
-    padding: 4px;
     width: 120px;
     justify-content: center;
 }
 
+.linkBtn, button {
+    display: flex;
+    color: white;
+    font-family: 'commodore';
+    background-color: turquoise;
+    justify-content: center;
+    height: 20%;
+    width: 120px;
+}
+
+
+
+.nestedGrid {
+    display: flex;
+  
+}
+
+.topLeft, .topRight {
+    display: flex;
+    justify-content: center;
+}
+
+.midLeft {
+    display: flex; 
+    align-items: center;
+}
+
+.midRight {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.bottomLeft {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bottomRight {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

@@ -15,6 +15,7 @@ function App() {
     <>
       <Navbar />
       <Video />
+     
       
       <div className="App">
         <AnimatePresence>
