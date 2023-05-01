@@ -4,9 +4,10 @@ import Navbar from './components/navbar/navbar';
 import Home from './pages/home/home';
 import Under from './pages/under/under';
 import Mxnifesto from './pages/mxnifesto/mxnifesto';
+import Shows from './pages/shows/shows';
 import './App.css';
 import { AnimatePresence } from "framer-motion";
-import Video from '../src/components/video/video';
+//import Video from '../src/components/video/video';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Video />
+      {/* <Video /> */}
      
       
       <div className="App">
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/under" element={<Under />} />
             <Route path="/mxnifesto" element={<Mxnifesto />} />
+            <Route path="/shows" element={<Shows />} />
           </Routes>
         </AnimatePresence>
       </div>

@@ -1,0 +1,6 @@
+.images {
+   
+    max-height: 500px;
+    left: 10;
+    object-fit: contain;
+}

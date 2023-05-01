@@ -3,7 +3,7 @@ import React from 'react';
 //import Home from './pages/home/home';
 //import Under from './pages/under/under';
 import './home.css';
-//import Video from '../../components/video/video';
+import Video from '../../components/video/video';
 import Grid from '@mui/material/Grid';
 import { motion } from "framer-motion";
 import '../../index.css'
@@ -14,7 +14,7 @@ function Home() {
     return (
         <>
             <motion.div className="homeTwoGrid" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
-
+                <Video />
                 <Grid container className="homeTwoGrid" sx={{ display: 'flex' }}>
 
 
