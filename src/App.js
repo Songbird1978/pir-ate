@@ -1,8 +1,6 @@
 import React from 'react';
-import { createBrowserRouter, Route, 
-  // useLocation, 
-  createRoutesFromElements, RouterProvider } from 'react-router-dom';
-//import Navbar from './components/navbar/navbar';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import Navbar from './components/navbar/navbar';
 import Home from './pages/home/home';
 import Under from './pages/under/under';
 import Mxnifesto from './pages/mxnifesto/mxnifesto';
@@ -12,35 +10,33 @@ import Coop from './pages/coop/coop';
 import Curious from './pages/curious/curious';
 import './App.css';
 import { AnimatePresence } from "framer-motion";
-import RootLayout from './layouts/rootLayout';
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <AnimatePresence>
-          <Route path="/" element={<RootLayout />} 
-          // location={location} key={location.pathname}
-          >
-            <Route index element={<Home />} />
-            <Route path="/under" element={<Under />} />
-            <Route path="/mxnifesto" element={<Mxnifesto />} />
-            <Route path="/shows" element={<Shows />} />
-            <Route path="/articles" element={<Articles />} />
-              <Route path="articles/coop" element={<Coop />} />
-              <Route path="articles/curious" element={<Curious />} />
-          </Route>
-        </AnimatePresence>
-  )
-);
 
 function App() {
   //const location = useLocation();
   return (
     <>
+      <Navbar />
+      <div className="App">
+        <AnimatePresence>
+          <Routes location={location} key={location.pathname}>
 
-      <RouterProvider className="App" router={router}/>
-         
-    </>
-  );
+            <Route path="/" element={<Home />} />
+            <Route path="/under" element={<Under />} />
+            <Route path="/mxnifesto" element={<Mxnifesto />} />
+            <Route path="/shows" element={<Shows />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="/coop" element={<Coop />} />
+            <Route path="/curious" element={<Curious />} />
+          </Routes>
+        </AnimatePresence>
+
+
+
+        <div>
+
+        </>
+        );
 }
 
-export default App;
+        export default App;

@@ -14,19 +14,19 @@ function Coop() {
 
         <motion.div className="containerConstruction" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
 
-            <Paper className="coop" elevation={10} sx={{ mode: 'dark' }}>
+            <Paper className="mxnifesto" elevation={10} sx={{ mode: 'dark' }}>
                 <h1 className="title">Co-operation Condor</h1>
 
                 <Box className="A">
                     <Box className="B">
-                        <video autoPlay playsInline muted >
-                            <source src={Coopvid} type="video/mp4" poster=""></source>
-                        </video>
-
+                            <video autoPlay playsInline muted >
+                                <source src={Coopvid} type="video/mp4" poster=""></source>
+                            </video>
+                     
                     </Box>
                 </Box>
 
-                <p className="Paragraph">{
+                <p className="manifestoParagraph">{
 
                     `
 P!R@T LAB creates for change through satirical socio-political art.
