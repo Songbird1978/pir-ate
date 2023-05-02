@@ -1,4 +1,5 @@
 [
+    
     {
         "id": 0,
         "title": "Emergency Brexit",
@@ -30,7 +31,7 @@
         "title": "Sleepy Creepy Joe Biden for time",
         "description": "There are certain times at which running your washing machine or tumble dryer can be more expensive.",
         "info": "The most expensive time for you to wash or dry your clothes is between 4pm and 7pm, so try to avoid. You could also try washing less frequently, washing with colder temperature settings and skiping the ironing. SUPERTIP - Nobody likes ironing though do we? ",
-        "image": "/assets/joebiden.png",
+        "image": "/assets/joebiden.jpeg",
         "imageName": "Sleepy Creepy Joe Biden by Jose Canepa",
         "copyright": "Copyright Jose Canepa 2023",
         "link": "",
@@ -43,10 +44,10 @@
         "title": "Co-operation Condor",
         "description": "There are certain times at which running your washing machine or tumble dryer can be more expensive.",
         "info": "The most expensive time for you to wash or dry your clothes is between 4pm and 7pm, so try to avoid. You could also try washing less frequently, washing with colder temperature settings and skiping the ironing. SUPERTIP - Nobody likes ironing though do we? ",
-        "image": "/assets/coop.mp4",
+        "image": "/assets/coop.png",
         "imageName": "Co-operation Condor by Jose Canepa",
         "copyright": "Copyright Jose Canepa 2023",
-        "link": "",
+        "link": "./pages/coop/coop.js",
         "className": "EmergencyBrexit",
         "xs": 12,
         "sm": 6
@@ -56,25 +57,13 @@
         "title": "The Curious Chase of Julian Assange",
         "description": "There are certain times at which running your washing machine or tumble dryer can be more expensive.",
         "info": "The most expensive time for you to wash or dry your clothes is between 4pm and 7pm, so try to avoid. You could also try washing less frequently, washing with colder temperature settings and skiping the ironing. SUPERTIP - Nobody likes ironing though do we? ",
-        "image": "/assets/curiouschase.mp4",
+        "image": "/assets/curiouschase.png",
         "imageName": "The Curious Chase of Julian Assange by Jose Canepa",
         "copyright": "Copyright Jose Canepa 2023",
-        "link": "",
+        "link": "./pages/curious/curious.js",
         "className": "EmergencyBrexit",
         "xs": 12,
         "sm": 6
-    },
-    {
-        "id": 5,
-        "title": "Emergency Brexit",
-        "description": "There are certain times at which running your washing machine or tumble dryer can be more expensive.",
-        "info": "The most expensive time for you to wash or dry your clothes is between 4pm and 7pm, so try to avoid. You could also try washing less frequently, washing with colder temperature settings and skiping the ironing. SUPERTIP - Nobody likes ironing though do we? ",
-        "image": "/assets/brexit.png",
-        "imageName": "Emergency Brexit by Jose Canepa",
-        "copyright": "Copyright Control Jose Canepa",
-        "link": "",
-        "className": "EmergencyBrexit",
-        "xs": 12,
-        "sm": 12
     }
+    
 ]
