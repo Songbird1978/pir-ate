@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
-import Data from '../../Data.json';
+import data from '../../Data.json';
 import { Link } from 'react-router-dom';
 import "../../index.css";
 import "../article/article.css";
@@ -18,21 +18,21 @@ function Article() {
 
     <Grid container className="articleGrid">
 
-      {Data.map((Article) => {
+      {data.map((article) => {
         return (
 
-          <Grid item xs={12} className="GridItem" key={Article.id} >
+          <Grid item xs={12} className="GridItem" key={article.id} >
 
-            <Card className={Article.className}>
-              <CardMedia component={Article.imageUrl} className={Article.className} key={Article.imageUrl} alt={Article.imageName} style={{ scale: '1', padding: "0", left: "0", right: "0" }}></CardMedia>
+            <Card className={article.className}>
+              <CardMedia component={article.icon} className={article.className} key={article.image} alt={article.imageName} style={{ scale: '1', padding: "0", left: "0", right: "0" }}></CardMedia>
 
               <CardContent>
-                <h1 className="articleTitle" >{Article.title}</h1>
-                <p className="articleDescription" >{Article.description}</p>
+                <h1 className="articleTitle" >{article.title}</h1>
+                <p className="articleDescription" >{article.description}</p>
               </CardContent>
               <CardActions>
                 <Button size="large">
-                  <Link to={Article.link} className={Article.className}>
+                  <Link to={article.link} className={article.className}>
                   </Link>
                 </Button>
               </CardActions>
