@@ -1,0 +1,30 @@
+.articleGrid {
+    display: flex;
+}
+
+.EmergencyBrexit {
+
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+
+    align-items: center;
+    overflow: scroll;
+}
+
+.image {
+    margin-left: 50%;
+}
+
+.articleDescription {
+    font-family: "courier";
+    font-size: 2vw;
+    text-align: justify;
+    overflow: scroll;
+}
+
+.articleTitle {
+    font-family: "zx-spectrum";
+    font-size: 3vw;
+    text-align: center;
+}

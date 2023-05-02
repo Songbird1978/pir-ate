@@ -6,7 +6,7 @@ import './articles.css';
 import Grid from '@mui/material/Grid';
 import { motion } from "framer-motion";
 import '../../index.css'
-import Card from '../../components/article/article';
+import Article from '../../components/article/article';
 
 
 function Articles() {
@@ -24,9 +24,7 @@ function Articles() {
 
                     <Grid item className="noFun" xs={1} sx={{ backgroundColor: 'black', height: '75vh' }}></Grid>
                     <Grid item className="center" xs={10} sx={{}}>
-                       <Card></Card>
-
-
+                       <Article></Article>
                     </Grid>
                     <Grid item className="scratch" xs={1} sx={{ backgroundColor: 'black', height: '75vh' }}></Grid>
 

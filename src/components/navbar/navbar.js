@@ -83,7 +83,7 @@ function Navbar() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} style={{ height: '10vh', backgroundColor: "black", color: "white" }}>
+      <AppBar position="fixed" open={open} style={{ height: '2vh', backgroundColor: "black", color: "white" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -124,7 +124,7 @@ function Navbar() {
           </ListItem>
           <Divider />
           <ListItem>
-            <Link to="/under" style={{ textDecoration: 'none', color: 'white' }}>Articles</Link>
+            <Link to="/articles" style={{ textDecoration: 'none', color: 'white' }}>Articles</Link>
           </ListItem>
           <Divider />
           <ListItem>
