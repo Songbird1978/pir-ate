@@ -2,12 +2,11 @@
     display: flex;
 }
 
-.EmergencyBrexit {
+.EmergencyBrexit, .MuiCard-root {
 
     display: inline-block;
     color: black;
     text-decoration: none;
-
     align-items: center;
     overflow: scroll;
 }
@@ -16,14 +15,14 @@
     margin-left: 50%;
 }
 
-.articleDescription {
+.articleDescription, .MuiCard-root {
     font-family: "courier";
     font-size: 2vw;
     text-align: justify;
     overflow: scroll;
 }
 
-.articleTitle {
+.articleTitle, .MuiCard-root {
     font-family: "zx-spectrum";
     font-size: 3vw;
     text-align: center;
