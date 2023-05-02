@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { createBrowserRouter, Routes, Route, Link, NavLink, useLocation } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
 import Home from './pages/home/home';
 import Under from './pages/under/under';
@@ -29,8 +29,8 @@ function App() {
             <Route path="/mxnifesto" element={<Mxnifesto />} />
             <Route path="/shows" element={<Shows />} />
             <Route path="/articles" element={<Articles />} />
-            <Route path="/coop" element={<Coop />} />
-            <Route path="/curious" element={<Curious />} />
+              <Route path="articles/coop" element={<Coop />} />
+              <Route path="articles/curious" element={<Curious />} />
           </Routes>
         </AnimatePresence>
       </div>

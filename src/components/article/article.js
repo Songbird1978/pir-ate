@@ -25,7 +25,7 @@ function Article() {
         return (
 
           <Grid item xs={article.xs} sm={article.sm} className="GridItem" key={article.id} >
-            <Link to={article.link} className="cardBtn">
+            <Link to={article.link} className="links">
 
               <Card id="card" className={article.className}>
 

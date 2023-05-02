@@ -47,7 +47,7 @@
         "image": "/assets/coop.png",
         "imageName": "Co-operation Condor by Jose Canepa",
         "copyright": "Copyright Jose Canepa 2023",
-        "link": "./pages/coop/coop.js",
+        "link": "/coop/coop.js",
         "className": "EmergencyBrexit",
         "xs": 12,
         "sm": 6
@@ -60,7 +60,7 @@
         "image": "/assets/curiouschase.png",
         "imageName": "The Curious Chase of Julian Assange by Jose Canepa",
         "copyright": "Copyright Jose Canepa 2023",
-        "link": "./pages/curious/curious.js",
+        "link": "/curious/curious.js",
         "className": "EmergencyBrexit",
         "xs": 12,
         "sm": 6
