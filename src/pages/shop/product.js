@@ -8,12 +8,12 @@ import Card from '@mui/material/Card';
 
 
 function Product(props) {
-    const { id, productName, price, productImage } = props.data;
+    const { productName, price, productImage } = props.data;
     return (
        
                 <Card>
                     <div className="productName">
-                        <img src={productImage} />
+                        <img src={productImage} alt={productName}/>
                         <div className="productDescription">
                             <p>  <b>{productName}</b></p>
                             <p>£{price}</p>

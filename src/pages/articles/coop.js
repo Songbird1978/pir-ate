@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Box from '@mui/material/Box';
 import Coopvid from '../../assets/coop.mp4';
 //import Container from '@mui/material/Container';
-import data from '../../Data.json';
+//import data from '../../Data.json';
 
 
 function Coop() {

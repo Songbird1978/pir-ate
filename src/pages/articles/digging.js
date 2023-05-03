@@ -5,7 +5,7 @@ import '../../index.css';
 import Paper from '@mui/material/Paper';
 import { motion } from "framer-motion";
 import Box from '@mui/material/Box';
-import data from '../../Data.json';
+//import data from '../../Data.json';
 
 
 
