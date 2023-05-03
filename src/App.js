@@ -3,6 +3,8 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
 import Home from './pages/home/home';
 import Under from './pages/under/under';
+import Shop from './pages/shop/shop';
+import Cart from './pages/shop/cart';
 import Mxnifesto from './pages/mxnifesto/mxnifesto';
 import Shows from './pages/shows/shows';
 import Articles from './pages/articles/articles';
@@ -19,30 +21,35 @@ function App() {
   const location = useLocation();
   return (
     <>
-      
-      <Navbar />
+     \
+        <Navbar />
 
-      <div className="App">
-        
-        <AnimatePresence>
-          <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
-            <Route path="/under" element={<Under />} />
-            <Route path="/mxnifesto" element={<Mxnifesto />} />
-            <Route path="/shows" element={<Shows />} />
-            <Route path="/articles" element={<Articles />} />
+        <div className="App">
+
+          <AnimatePresence>
+
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home />} />
+              <Route path="/under" element={<Under />} />
+              <Route path="/mxnifesto" element={<Mxnifesto />} />
+              <Route path="/shows" element={<Shows />} />
+              <Route path="/shop" element={<Shop />} />
+                <Route path=":id" element={<Cart />} />
+              <Route path="/articles" element={<Articles />} />
               <Route path=":id" element={<Coop />} />
               <Route path=":id" element={<Curious />} />
               <Route path=":id" element={<Brexit />} />
               <Route path=":id" element={<Digging />} />
               <Route path=":id" element={<Biden />} />
-          </Routes>
-        </AnimatePresence>
+            </Routes>
+          </AnimatePresence>
+          </div >
+     
 
-        </div>
+ 
 
         </>
         );
 }
 
-        export default App;
+export default App;
