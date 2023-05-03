@@ -144,7 +144,7 @@ function Navbar() {
           </ListItem>
           <Divider />
           <ListItem>
-            <Link to="/under" style={{ textDecoration: 'none', color: 'white' }}>GiftShop</Link>
+            <Link to="/shop" style={{ textDecoration: 'none', color: 'white' }}>GiftShop</Link>
           </ListItem>
           <Divider />
           <Contact />
