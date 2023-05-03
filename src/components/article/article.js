@@ -1,9 +1,9 @@
 import React from 'react';
 import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Button from '@mui/material/Button';
+//import CardMedia from '@mui/material/CardMedia';
+//import CardContent from '@mui/material/CardContent';
+//import CardActions from '@mui/material/CardActions';
+//import Button from '@mui/material/Button';
 //import CardActions from '@mui/material/CardActions';
 //import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
@@ -18,42 +18,38 @@ function Article() {
 
   return (
 
-    <Grid container className="articleGrid">
+    <Grid container className="articleGrid" spacing={3}>
 
       {data.map((article) => {
         return (
 
-          <Grid item xs={article.xs} sm={article.sm} className="GridItem" key={article.id} >
-            <Link to={article.link} className="cardBtn">
+          <Grid item xs={article.xs} sm={article.sm} className={article.className} key={article.id} >
+            <Link to={article.link} className="articleLink">
 
-              <Card id="card" className={article.className}>
+              <Card id="articleCard" >
 
-              <CardContent>
-              <div className="imageDiv">
-                <img src={article.image} className={article.className} key={article.image} alt={article.imageName} style={{ scale: '1', padding: "0", left: "0", right: "0" }}></img>
+                <div className="articleImage">
+                  <img src={article.image} className="articleImage" key={article.image} alt={article.imageName} style={{ scale: '1', padding: "0", left: "0", right: "0" }}></img>
                 </div>
-                <div className="titleDiv">
-                <h1 className="articleTitle" >{article.title}</h1>
+                <div className="articleTitle">
+                  <h1 className="articleTitle" >{article.title}</h1>
                 </div>
-                <div className="infoDiv">
-                <p className="articleDescription" >{article.description}</p>
+                <div className="articleDescription">
+                  <p className="articleDescription" >{article.description}</p>
                 </div>
-               
-              </CardContent>
-              <CardActions>
-                <Link to={article.link} className={article.className}>
-                  <button className="cardBtn" size="large">
-                    Read More
-                  </button>
-                </Link>
-              </CardActions>
-            </Card>
+                <button className="articleBtn" size="large">
+                  Read More
+                </button>
+
+              </Card>
+            </Link>
 
           </Grid>
 
 
-        );
+        )
       })}
+
     </Grid>
 
   )

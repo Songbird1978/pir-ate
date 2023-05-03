@@ -13,11 +13,14 @@ import { AnimatePresence } from "framer-motion";
 
 
 function App() {
-  //const location = useLocation();
+  const location = useLocation();
   return (
     <>
+      
       <Navbar />
+
       <div className="App">
+        
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
 
@@ -31,9 +34,7 @@ function App() {
           </Routes>
         </AnimatePresence>
 
-
-
-        <div>
+        </div>
 
         </>
         );

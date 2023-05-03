@@ -1,71 +1,62 @@
-.pageTitle {
- display: fixed; 
- z-index: 30;
-color: white; 
-font-family: 'commodore';
-margin-top: 100px;
-height: 100px;
-}
 
+/* Container */
 .articleGrid {
+   display: flex;
+}
+
+/* Grid item */
+.gridItem {
     display: flex;
-}
-
-.EmergencyBrexit {
-
-    display: block;
-    color: black;
-    text-decoration: none;
-    align-items: center;
-    text-overflow: none;
     height: 100%;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-    
 }
 
-#card {
+/* Card */
+
+#articleCard {
     box-shadow: rgba(46, 237, 240, 0.4) -5px 5px, rgba(46, 237, 240, 0.3) -10px 10px, rgba(46, 227, 240, 0.2) -15px 15px, rgba(46, 240, 233, 0.1) -20px 20px, rgba(46, 217, 240, 0.05) -25px 25px;
-}
-
-.imageDiv {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    padding: 20px;
     height: 100%;
+
+    
 }
 
-.image {
+/* Content */
+.articleImage {
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.articleDescription {
-    display: inline-block;
-    font-family: courier;
-    font-size: 2vw;
-    text-align: justify;
-    overflow: scroll;
+    width: auto;
+   
 }
 
 .articleTitle {
     display: inline-block;
     font-family: "commodore";
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     text-align: center;
+  
 }
 
-.cardBtn {
+
+
+.articleDescription {
+    display: inline-block;
+    font-family: courier;
+    font-size: 1.3vw;
+    text-align: justify;
+    overflow: scroll;
+    text-overflow: none;
+   
+}
+
+.articleBtn {
     height: 30px;
     text-align: center;
     padding: 5px;
     display: inline-flex;
-    justify-content:last baseline;
     align-items: flex-end;
     text-decoration: none;
+    
 }
 
 .links {
