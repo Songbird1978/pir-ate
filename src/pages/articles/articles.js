@@ -19,17 +19,17 @@ function Articles() {
 
 
                     <Grid item className="homeTwoGrid" xs={1} sx={{ backgroundColor: 'black', height: '10vh' }} ></Grid>
-                    <Grid item className="" xs={10} sx={{ backgroundColor: 'black', height: '10vh' }} ></Grid>
+                    <Grid item className="welcome" xs={10} sx={{ backgroundColor: 'black', height: '10vh' }} ></Grid>
                     <Grid item className="homeTwoGrid" xs={1} sx={{ backgroundColor: 'black', height: '10vh' }}></Grid>
 
-                    <Grid item className="" xs={1} sx={{ backgroundColor: 'black', height: '75vh' }}></Grid>
+                    <Grid item className="noFun" xs={1} sx={{ backgroundColor: 'black', height: '75vh' }}></Grid>
                     <Grid item className="center" xs={10} sx={{}}>
                        <Article></Article>
                     </Grid>
-                    <Grid item className="" xs={1} sx={{ backgroundColor: 'black', height: '75vh' }}></Grid>
+                    <Grid item className="scratch" xs={1} sx={{ backgroundColor: 'black', height: '75vh' }}></Grid>
 
                     <Grid item className="seven" xs={1} sx={{ backgroundColor: 'black', height: '10vh' }}></Grid>
-                    <Grid item className="" xs={10} sx={{ backgroundColor: 'black', height: '10vh' }}></Grid>
+                    <Grid item className="trigger" xs={10} sx={{ backgroundColor: 'black', height: '10vh' }}></Grid>
                     <Grid item className="nine" xs={1} sx={{ backgroundColor: 'black', height: '10vh' }}></Grid>
 
                 </Grid >

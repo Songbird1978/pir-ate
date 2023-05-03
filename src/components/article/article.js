@@ -1,7 +1,9 @@
 import React from 'react';
 import Card from '@mui/material/Card';
-//import CardMedia from '@mui/material/CardMedia';
+import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
+import CardActions from '@mui/material/CardActions';
+import Button from '@mui/material/Button';
 //import CardActions from '@mui/material/CardActions';
 //import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
@@ -16,10 +18,7 @@ function Article() {
 
   return (
 
-    <Grid container className="articleGrid" spacing={6}>
-      <div>
-        <title className="pageTitle"> Articles</title>
-      </div>
+    <Grid container className="articleGrid">
 
       {data.map((article) => {
         return (
@@ -29,26 +28,27 @@ function Article() {
 
               <Card id="card" className={article.className}>
 
-                <CardContent>
-                  <div className="imageDiv">
-                    <img src={article.image} className={article.className} key={article.image} alt={article.imageName} style={{ scale: '1', padding: "0", left: "0", right: "0" }}></img>
-                  </div>
-                  <div className="titleDiv">
-                    <h1 className="articleTitle" >{article.title}</h1>
-                  </div>
-                  <div className="infoDiv">
-                    <p className="articleDescription" >{article.description}</p>
-                  </div>
-
-                </CardContent>
-                <div className="links">
+              <CardContent>
+              <div className="imageDiv">
+                <img src={article.image} className={article.className} key={article.image} alt={article.imageName} style={{ scale: '1', padding: "0", left: "0", right: "0" }}></img>
+                </div>
+                <div className="titleDiv">
+                <h1 className="articleTitle" >{article.title}</h1>
+                </div>
+                <div className="infoDiv">
+                <p className="articleDescription" >{article.description}</p>
+                </div>
+               
+              </CardContent>
+              <CardActions>
+                <Link to={article.link} className={article.className}>
                   <button className="cardBtn" size="large">
                     Read More
                   </button>
+                </Link>
+              </CardActions>
+            </Card>
 
-                </div>
-              </Card>
-            </Link>
           </Grid>
 
 
