@@ -1,11 +1,12 @@
 import React from "react";
 //import { Link } from "react-router-dom";
-import "./curious.css";
+import './articles.css';
 import '../../index.css';
 import Paper from '@mui/material/Paper';
 import { motion } from "framer-motion";
 import Box from '@mui/material/Box';
 import Curiousvid from '../../assets/curiouschase.mp4';
+import data from '../../Data.json';
 
 
 

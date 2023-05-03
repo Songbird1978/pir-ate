@@ -8,7 +8,7 @@
         "image": "images/brexit.png", 
         "imageName": "Emergency Brexit by Jose Canepa",
         "copyright": "Copyright Control Jose Canepa",
-        "link": "",
+        "link": "brexit.js",
         "className": "EmergencyBrexit",
         "xs": 12,
         "sm": 6
@@ -21,7 +21,7 @@
         "image": "images/brexit.png",
         "imageName": "Digging their Own Grave Mistakes by Jose Canepa",
         "copyright": "Copyright Control Jose Canepa",
-        "link": "",
+        "link": "digging.js",
         "className": "EmergencyBrexit",
         "xs": 12,
         "sm": 6
@@ -34,7 +34,7 @@
         "image": "images/biden.jpeg",
         "imageName": "Sleepy Creepy Joe Biden by Jose Canepa",
         "copyright": "Copyright Jose Canepa 2023",
-        "link": "",
+        "link": "biden.js",
         "className": "EmergencyBrexit",
         "xs": 12,
         "sm": 12
@@ -47,7 +47,7 @@
         "image": "images/coop.png",
         "imageName": "Co-operation Condor by Jose Canepa",
         "copyright": "Copyright Jose Canepa 2023",
-        "link": "./pages/coop/coop.js",
+        "link": "coop.js",
         "className": "EmergencyBrexit",
         "xs": 12,
         "sm": 6
@@ -60,7 +60,7 @@
         "image": "images/curiouschase.png",
         "imageName": "The Curious Chase of Julian Assange by Jose Canepa",
         "copyright": "Copyright Jose Canepa 2023",
-        "link": "./pages/curious/curious.js",
+        "link": "curious.js",
         "className": "EmergencyBrexit",
         "xs": 12,
         "sm": 6

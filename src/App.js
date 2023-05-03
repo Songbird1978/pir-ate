@@ -6,8 +6,11 @@ import Under from './pages/under/under';
 import Mxnifesto from './pages/mxnifesto/mxnifesto';
 import Shows from './pages/shows/shows';
 import Articles from './pages/articles/articles';
-import Coop from './pages/coop/coop';
-import Curious from './pages/curious/curious';
+import Coop from './pages/articles/coop';
+import Curious from './pages/articles/curious';
+import Biden from './pages/articles/biden';
+import Brexit from './pages/articles/brexit';
+import Digging from './pages/articles/digging';
 import './App.css';
 import { AnimatePresence } from "framer-motion";
 
@@ -23,14 +26,16 @@ function App() {
         
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
-
             <Route path="/" element={<Home />} />
             <Route path="/under" element={<Under />} />
             <Route path="/mxnifesto" element={<Mxnifesto />} />
             <Route path="/shows" element={<Shows />} />
             <Route path="/articles" element={<Articles />} />
-            <Route path="/coop" element={<Coop />} />
-            <Route path="/curious" element={<Curious />} />
+              <Route path=":id" element={<Coop />} />
+              <Route path=":id" element={<Curious />} />
+              <Route path=":id" element={<Brexit />} />
+              <Route path=":id" element={<Digging />} />
+              <Route path=":id" element={<Biden />} />
           </Routes>
         </AnimatePresence>
 

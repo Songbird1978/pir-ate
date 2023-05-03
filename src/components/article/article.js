@@ -1,16 +1,11 @@
 import React from 'react';
 import Card from '@mui/material/Card';
-//import CardMedia from '@mui/material/CardMedia';
-//import CardContent from '@mui/material/CardContent';
-//import CardActions from '@mui/material/CardActions';
-//import Button from '@mui/material/Button';
-//import CardActions from '@mui/material/CardActions';
-//import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import data from '../../Data.json';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import "../../index.css";
 import "../article/article.css";
+
 
 
 
@@ -19,7 +14,7 @@ function Article() {
   return (
 
     <Grid container className="articleGrid" spacing={3}>
-
+      <Outlet />
       {data.map((article) => {
         return (
 
@@ -37,11 +32,7 @@ function Article() {
                 <div className="articleDescription">
                   <p className="articleDescription" >{article.description}</p>
                 </div>
-                <div className="articleBtn">
-                  <button className="articleBtn" size="large">
-                    Read More
-                  </button>
-                </div>
+               
 
               </Card>
             </Link>
@@ -58,15 +49,5 @@ function Article() {
 
   )
 }
-
-
-
-
-
-
-
-
-
-
 
 export default Article

@@ -12,7 +12,7 @@ function Video() {
         <Box className="A">
             <Box className="B">
                 <Link to="/">
-                    <video autoPlay playsInline muted >
+                    <video autoPlay muted loop playsInline >
                         <source src={video} type="video/mp4" poster=""></source>
                     </video>
                 </Link>
