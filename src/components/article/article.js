@@ -37,9 +37,11 @@ function Article() {
                 <div className="articleDescription">
                   <p className="articleDescription" >{article.description}</p>
                 </div>
-                <button className="articleBtn" size="large">
-                  Read More
-                </button>
+                <div className="articleBtn">
+                  <button className="articleBtn" size="large">
+                    Read More
+                  </button>
+                </div>
 
               </Card>
             </Link>
@@ -51,6 +53,8 @@ function Article() {
       })}
 
     </Grid>
+
+
 
   )
 }
